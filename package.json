@@ -1,6 +1,6 @@
 {
   "name": "ducky-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Digital duck debugging CLI",
   "main": "index.js",
   "preferGlobal": true,
