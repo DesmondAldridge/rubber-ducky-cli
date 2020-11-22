@@ -1,7 +1,7 @@
 # RUBBER DUCKY CLI <img src="./rubber-ducky.ico" width="25px"> &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## DESCRIPTION
-This CLI allows you to do rubber duck debugging within the terminal, replacing the need for a physical rubber duck by your desktop computer and providing it on your computer's desktop!  
+Why keep a rubber ducky by your desktop computer when you can keep it on your computer's desktop? This CLI allows you to do rubber duck debugging within the terminal, replacing the need for a physical rubber ducky! 
 
 ![desktop-with-ducky](./img/desktop-with-ducky.png)
 
