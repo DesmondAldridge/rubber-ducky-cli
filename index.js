@@ -56,6 +56,16 @@ const listReviews = () => {
     })
 }
 
+//Special non-inquirer commands
+const summonDuck = () => {
+    console.log(`  
+      __
+    <(o )___
+     ( ._> /
+      '---'
+    `)
+}
+
 const askDuck = () => {
     console.log('QUACK')
 }
@@ -64,6 +74,7 @@ const askDuck = () => {
 
 //Export All Methods
 module.exports = {
+    summonDuck,
     addReview,
     findReview,
     updateReview,

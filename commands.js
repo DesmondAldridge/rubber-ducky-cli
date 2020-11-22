@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 const program = require('commander');
-const { prompt } = require('inquirer');
+const inquirer = require('inquirer');
 const {
+    summonDuck,
     addReview,
     findReview,
     updateReview,
@@ -32,8 +33,39 @@ const questions = [
 ]
 
 program
-.version('1.0.0.')
-.description('Digital Duck Debugging')
+.version('1.0.1.')
+.description(
+`  __
+<(o )___
+ ( ._> /
+  '---'  
+                                                                                                                                  
+88888888ba                88           88                                      88888888ba,                             88         
+88      "8b               88           88                                      88      '"8b                            88         
+88      ,8P               88           88                                      88        '8b                           88         
+88aaaaaa8P'  88       88  88,dPPYba,   88,dPPYba,    ,adPPYba,  8b,dPPYba,     88         88  88       88   ,adPPYba,  88   ,d8   
+88""""88'    88       88  88P'    "8a  88P'    "8a  a8P_____88  88P'   "Y8     88         88  88       88  a8"     ""  88 ,a8"    
+88    '8b    88       88  88       d8  88       d8  8PP"""""""  88             88         8P  88       88  8b          8888[      
+88     '8b   "8a,   ,a88  88b,   ,a8"  88b,   ,a8"  "8b,   ,aa  88             88      .a8P   "8a,   ,a88  "8a,   ,aa  88'"Yba,   
+88      '8b   '"YbbdP'Y8  8Y"Ybbd8"'   8Y"Ybbd8"'    '"Ybbd8"'  88             88888888Y"'     '"YbbdP'Y8   '"Ybbd8"'  88   'Y8a  
+                                                                                                                                  
+                                                                                                                                  
+                                                                                                                                  
+88888888ba,                88                                                  88                                                 
+88      ''"8b               88                                                  ""                                                 
+88        '8b              88                                                                                                     
+88         88   ,adPPYba,  88,dPPYba,   88       88   ,adPPYb,d8   ,adPPYb,d8  88  8b,dPPYba,    ,adPPYb,d8                       
+88         88  a8P_____88  88P'    "8a  88       88  a8"    'Y88  a8"    'Y88  88  88P'   '"8a  a8"    'Y88                       
+88         8P  8PP"""""""  88       d8  88       88  8b       88  8b       88  88  88       88  8b       88                       
+88      .a8P   "8b,   ,aa  88b,   ,a8"  "8a,   ,a88  "8a,   ,d88  "8a,   ,d88  88  88       88  "8a,   ,d88                       
+88888888Y"'     '"Ybbd8"'  8Y"Ybbd8"'    '"YbbdP'Y8   '"YbbdP"Y8   '"YbbdP"Y8  88  88       88   '"YbbdP"Y8                       
+                                                      aa,    ,88   aa,    ,88                    aa,    ,88                       
+                                                       "Y8bbdP"     "Y8bbdP"                      "Y8bbdP"                        
+  __
+<(o )___
+ ( ._> /
+  '---'
+`)
 
 // program
 // .command('add <key1> <key2> <key3> <key4>')
@@ -43,21 +75,28 @@ program
 //     addReview({key1, key2, key3, key4});
 // });
 
+//Ask Command
+program
+.command('start')
+.alias('s')
+.description("Summons your duck to the terminal")
+.action(() => summonDuck());
+
 //Add Command
 program
 .command('add')
 .alias('a')
 .description('Add a code review')
 .action(() => {
-    prompt(questions).then(answers => addReview(answers));
+    inquirer.prompt(questions).then(answers => addReview(answers));
 });
 
 //Find Command
 program
-.command('find <name>')
+.command('find <keyword>')
 .alias('f')
 .description('Find a code review')
-.action(name => findReview(name));
+.action(input => findReview(input));
 
 //Update Command
 program
@@ -65,7 +104,7 @@ program
 .alias('u')
 .description('Update a code review')
 .action(_id => {
-    prompt(questions).then(answers => updateReview(_id, answers));
+    inquirer.prompt(questions).then(answers => updateReview(_id, answers));
 });
 
 //Remove Command
