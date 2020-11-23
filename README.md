@@ -69,7 +69,7 @@ $ npm unlink
 <br>
 <br>
 
->STEP 2: Go to the 'Customize' tag and select 'Change Icon'.
+>STEP 2: Go to the 'Customize' tab and select 'Change Icon'.
 >
 
 <br>
