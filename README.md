@@ -112,10 +112,7 @@ $ npm unlink
 
 ## USAGE
 
-### Summon a digital rubber ducky to your terminal so that you may carry on with your verbal code review all within the virtual arena on screen. If you wish to document particular issues and their subsequent solution, you may do so by entering them into the rubber ducky's database. The option to search, update, and even remove prior entries are also available to you.
-<br>
-
-### Lastly, if you wish for your digital rubber ducky to respond you simply need ask with the proper CLI command.
+### Summon a digital rubber ducky to your terminal and carry on with your verbal code review all within the virtual arena on screen. If you wish to document particular issues and their subsequent solution, you may do so by entering them into the rubber ducky's database. The option to search, update, and even remove prior entries are also available to you. Lastly - and this may be quite significant to some - if you wish for your digital rubber ducky to respond you simply need ask with the proper CLI command.
 <br>
 
 ### Instructions are as follows...
