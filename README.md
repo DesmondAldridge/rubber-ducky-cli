@@ -61,7 +61,7 @@ $ npm unlink
 
 >STEP 1: Right click (Ctrl key in MAC) the CLI's newly cloned directory folder, and select 'Properties' at the bottom of the drop down menu.
 >
-<br>
+
 <br>
 
 <center><img src="img\icon-setup-1.png"></center>
@@ -69,10 +69,9 @@ $ npm unlink
 <br>
 <br>
 
->STEP 2: Next go to the 'Customize' tag and select 'Change Icon'.
+>STEP 2: Go to the 'Customize' tag and select 'Change Icon'.
 >
 
-<br>
 <br>
 
 <center><img src="img\icon-setup-2.png"></center>
@@ -82,7 +81,7 @@ $ npm unlink
 
 >STEP 3: Select 'Browse'.
 >
-<br>
+
 <br>
 
 <center><img src="img\icon-setup-3.png"></center>
@@ -92,7 +91,7 @@ $ npm unlink
 
 >STEP 4: Navigate to the CLI's directory, where you will find a rubber ducky icon. Select it.
 >
-<br>
+
 <br>
 
 <center><img src="img\icon-setup-4.png"></center>
